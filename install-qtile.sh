@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# qtile requirements and dependencies
-sudo apt install -y git python3-pip python3-xcffib python3-cairocffi pipx
+# prerequisites
+sudo apt install -y git pipx
 # qtile download and installation
 pipx install "git+https://github.com/qtile/qtile.git"
 # add to qtile enviorment the psutil package for widget use
@@ -20,7 +20,7 @@ u=$USER
 sudo echo "Exec=/home/$u/.local/bin/qtile start" | sudo tee -a /usr/share/xsessions/qtile.desktop
 
 # Packages needed qtile after installation
-sudo apt install -y picom alacritty rofi qalculate-gtk vim geany geany-plugin-treebrowser mpv lxappearance arc-theme udiskie lxpolkit ntfs-3g
+sudo apt install -y picom alacritty rofi qalculate-gtk vim geany geany-plugin-treebrowser nitrogen mpv lxappearance arc-theme udiskie lxpolkit
 
 # copy configuration files
 cp -Rf .config ~/
