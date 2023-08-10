@@ -19,3 +19,6 @@ sudo echo "Exec=/home/$u/.local/bin/qtile start" | sudo tee -a /usr/share/xsessi
 
 # Packages needed qtile after installation
 sudo apt install -y picom rofi qalculate-gtk vim geany geany-plugin-treebrowser mpv lxappearance arc-theme udiskie lxpolkit ntfs-3g
+
+# copy configuration files
+cp -Rf .config ~/
